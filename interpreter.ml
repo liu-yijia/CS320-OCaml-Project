@@ -1,23 +1,3 @@
-(*
-Honor code comes here:
-
-First Name: Jiaye 
-Last Name: Liu
-BU ID: U36376979
-
-First Name: Yijia 
-Last Name: Liu
-BU ID: U40694719
-
-I pledge that this program represents my own
-program code and that I have coded on my own. I received
-help from no one in designing and debugging my program.
-I have read the course syllabus of CS 320 and have read the sections on Collaboration
-and Academic Misconduct. I also understand that I may be asked to meet the instructor
-or the TF for a follow up interview on Zoom. I may be asked to explain my solution in person and
-may also ask you to solve a related problem.
-*)
-
 
 
 open Printf
@@ -315,14 +295,6 @@ let letP=
 let askP =
   satsP "Ask" >>= fun _->
   return (Ask)
-
-(* if then 待补充，可能需要recursion *)
-
-
-(*看到一个command
-  let commandP =
-  pushP <|> swapP <|> popP <|> logP <|> addP <|> subP <|> mulP <|> divP <|> remP <|> negP <|> catP <|> andP <|> orP <|> notP <|> eqP <|> lteP <|> ltP <|> gteP <|> gtP <|> letP <|> askP <|> 
-*)
 
 (*处理一个command里的；*)
 let rec command_divP ()=
